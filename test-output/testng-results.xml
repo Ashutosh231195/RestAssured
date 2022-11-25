@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-25T21:55:54 IST" name="Default suite" finished-at="2022-11-25T21:55:54 IST" duration-ms="62">
+    <groups>
+    </groups>
+    <test started-at="2022-11-25T21:55:54 IST" name="Default test" finished-at="2022-11-25T21:55:54 IST" duration-ms="62">
+      <class name="jasondata">
+        <test-method signature="forigenPlayer()[pri:0, instance:jasondata@29626d54]" started-at="2022-11-25T21:55:54 IST" name="forigenPlayer" finished-at="2022-11-25T21:55:54 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forigenPlayer -->
+        <test-method signature="wicketKipper()[pri:0, instance:jasondata@29626d54]" started-at="2022-11-25T21:55:54 IST" name="wicketKipper" finished-at="2022-11-25T21:55:54 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wicketKipper -->
+      </class> <!-- jasondata -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
