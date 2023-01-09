@@ -8,7 +8,7 @@
 
  "role": "Batsman",
 
- "price-in-crores": "7"
+ "price_in_crores": "7"
 },
 
 {
@@ -19,7 +19,7 @@
 
  "role": "Batsman",
 
- "price-in-crores": "15"
+ "price_in_crores": "15"
 },
 
 {
@@ -30,7 +30,7 @@
 
  "role": "Batsman",
 
- "price-in-crores": "11"
+ "price_in_crores": "11"
 },
 
 {
@@ -41,7 +41,7 @@
 
  "role": "Bowler",
 
- "price-in-crores": "7"
+ "price_in_crores": "7"
 },
 
 {
@@ -52,7 +52,7 @@
 
  "role": "Bowler",
 
- "price-in-crores": "10.75"
+ "price_in_crores": "10.75"
 },
 
 {
@@ -63,7 +63,7 @@
 
  "role": "Bowler",
 
- "price-in-crores": "10.75"
+ "price_in_crores": "10.75"
 },
 
 {
@@ -74,7 +74,7 @@
 
  "role": "Wicket-keeper",
 
- "price-in-crores": "5.5"
+ "price_in_crores": "5.5"
 },
 
 {
@@ -85,7 +85,7 @@
 
  "role": "All-Rounder",
 
- "price-in-crores": "2.4"
+ "price_in_crores": "2.4"
 },
 
 {
@@ -96,7 +96,7 @@
 
  "role": "Batsman",
 
- "price-in-crores": "0.20"
+ "price_in_crores": "0.20"
 },
 
 {
@@ -107,7 +107,7 @@
 
  "role": "Bowler",
 
- "price-in-crores": "7.75"
+ "price_in_crores": "7.75"
 },
 
 {
@@ -118,5 +118,5 @@
 
  "role": "Bowler",
 
- "price-in-crores": "7.75"
+ "price_in_crores": "7.75"
 }]}

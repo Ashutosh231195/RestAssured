@@ -1,3 +1,4 @@
+package tests;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -10,12 +11,14 @@ import org.junit.Assert;
 import org.testng.annotations.Test;
 
 public class jasondata {
-	public static JSONObject  Jdata() throws IOException, ParseException {
+	public static JSONObject Jdata() throws IOException, ParseException {
 		JSONParser p= new JSONParser();
-		FileReader file= new FileReader("C:\\Users\\Aashuu\\eclipse-workspace\\RestAssurd\\jsondata\\data.json");
+		String path=System.getProperty("user.dir");
+		FileReader file= new FileReader(path+"\\jsondata\\data.json");
 		Object obj=p.parse(file);
 		
 	JSONObject json=	(JSONObject)obj;
+	
 	return json;
 	}
 	

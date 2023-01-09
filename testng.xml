@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="tests.soapXMLReqst"/>
+      <class name="tests.testExample"/>
+      <class name="tests.jasondata"/>
+      <class name="tests.putPATCHDELT"/>
+      <class name="tests.testGET"/>
+      <class name="tests.JsonSchemaVallidtor"/>
+      <class name="tests.localAPI"/>
+      <class name="tests.pathPara"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
