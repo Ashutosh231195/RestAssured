@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="utiles.excelData">
+      <class name="tests.localAPI">
         <methods>
-          <include name="test"/>
+          <include name="locslPut"/>
         </methods>
-      </class> <!-- utiles.excelData -->
+      </class> <!-- tests.localAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
