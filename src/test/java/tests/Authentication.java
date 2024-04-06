@@ -13,7 +13,7 @@ public class Authentication {
 	     // baseURI ="http://restapi.demoqa.com";
 		authentication=  preemptive().basic(DEFAULT_PATH, DEFAULT_BODY_ROOT_PATH);
 	    }
-	 
+  	 
 	    /**
 	     * Here we are using basic way of authentication
 	     */
@@ -27,7 +27,7 @@ public class Authentication {
 	                .get("/authentication/CheckForAuthentication")
 	                .then()
 	                .assertThat()
-	                .statusCode(HttpStatus.SC_OK).log().all(true);
+	                .statusCode(200).log().all(true);
 	                
 	    }
 	 

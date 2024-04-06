@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.localAPI">
+      <class name="demo.createUser">
         <methods>
-          <include name="locslPut"/>
+          <include name="serialisation"/>
         </methods>
-      </class> <!-- tests.localAPI -->
+      </class> <!-- demo.createUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

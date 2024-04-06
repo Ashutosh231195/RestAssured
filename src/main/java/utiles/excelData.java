@@ -53,10 +53,10 @@ return obj;
 		
 	}
 @Test(dataProvider="data")
-public void test(String userName, String password) {
+public void test(String userName, String password,String sex) {
 	System.out.println(userName);
 	System.out.println(password);
 
-	
+	System.out.println(sex);
 }
 }

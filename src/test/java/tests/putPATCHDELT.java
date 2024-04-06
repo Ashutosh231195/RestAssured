@@ -26,7 +26,7 @@ public void patch() {
 	 JSONObject obj= new JSONObject ();
 	 obj.put("name", "Ashutosh");
 	 obj.put("job", "Ardak");
-	 given().header("content-type","application/json").contentType(ContentType.JSON).accept(ContentType.JSON).body(obj.toJSONString()).when().
+	 given().header("content-type","application/json").accept(ContentType.JSON).body(obj.toJSONString()).when().
 	 put("/api/users/2").then().statusCode(200).log().all();
 	 
 

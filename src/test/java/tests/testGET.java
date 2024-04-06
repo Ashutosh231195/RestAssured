@@ -4,9 +4,13 @@ import static io.restassured.RestAssured.*;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
+import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import static org.hamcrest.Matchers.*;
+
+import java.util.List;
+
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import org.json.simple.JSONObject;
 
@@ -26,7 +30,7 @@ public class testGET {
 		 given().header("content-type","application/json").contentType(ContentType.JSON).accept(ContentType.JSON).body(obj.toJSONString())
 		 .when().
 		 post("/users").then().
-		 statusCode(201).log().all();
+		 statusCode(201).time(lessThan(200L)).log().all();
 		 
 	 }
 	 @Test
@@ -41,8 +45,16 @@ public class testGET {
 
 	     Response respn=  get("https://reqres.in/api/users");
 	    Headers ct= respn.getHeaders();
+	 Headers h=   respn.headers();
+	List<Header> s= h.asList();
+	
+	for(int i=0;i<s.size();i++) {
+		
+	
+	System.out.println(s.get(i));
+	}
 	   System.out.println( ct.getList("connection"));
-	    System.out.println(ct);
+	    //System.out.println(ct);
 	    	//	 then().
 	    //   body("data[2].first_name",equalTo("Emma")).log().all();
 	 }

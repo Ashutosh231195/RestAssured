@@ -1,6 +1,6 @@
 package tests;
 
-import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -79,7 +79,10 @@ InputStream input	=getClass().getClassLoader().getResourceAsStream("config.prope
 		
 	public void players() throws ParseException, IOException {
 	
-	
+	given().auth().basic("", "").
+	pathParam(server, server).
+	queryParams(server, server, null)
+	.accept("").when().get().then().statusCode(200).log().all();
 	
 	}
 

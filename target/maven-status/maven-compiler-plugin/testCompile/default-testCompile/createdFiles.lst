@@ -1,8 +1,0 @@
-tests\testGET.class
-tests\soapXMLReqst.class
-tests\localAPI.class
-tests\putPATCHDELT.class
-tests\pathPara.class
-tests\testExample.class
-tests\JsonSchemaVallidtor.class
-tests\jasondata.class

@@ -24,7 +24,7 @@ public class localAPI {
 		      obj.put("last_name", "deshmukh");
 		      obj.put("deptID",4);
 		baseURI="http://localhost:3000";
-		given().header("content-type","application/json").contentType(ContentType.JSON).
+		given().header("content-type","application/json").
 		body(obj.toJSONString()).
 		when().
 		post("profile").

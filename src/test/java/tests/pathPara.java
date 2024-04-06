@@ -43,10 +43,10 @@ public class pathPara {
 	}
 	@ Test
 	public static void QueryParam() {
-		baseURI="https://.in";
-		given().queryParam("page", 2).when().
+		baseURI="https://reqres.in";
+		given().queryParam("page", 2).contentType(ContentType.JSON).when().
 		get("api/users").then().assertThat().body(
-		         matchesJsonSchemaInClasspath("schema.json"));
+		         matchesJsonSchemaInClasspath("/schema.json"));
 		
 		
 	
